@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <h2>Прогноз погоды</h2>
+    <div class="search">
+        <input id="textField" type="text" placeholder="Введите город">
+        <button id="searchBtn">Показать</button>
+    </div>
+</header>
+
+<section>
+    <div class="card">
+        <div>
+            <h3 id="cityName">London <span class="gs">GB</span></h3>
+            <h1 id="temp"> 11 <span>°c</span></h1>
+            <p id="weatherStatus"> Облачно </p>
+            <p id="wind"> Ветер </p>
+            <p id="humidity"> Влажность </p>
+        </div>
+        <div>
+            <img  id="image"  src="./image/clouds.png">
+        </div>
+    </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
