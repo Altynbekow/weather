@@ -20,7 +20,7 @@ getWeather()
 const cityName = document.getElementById('cityName')
 const temp = document.getElementById('temp')
 const weatherStatus = document.getElementById('weatherStatus')
-const wind = document.getElementById('wind')
+const winD = document.getElementById('wind')
 const humidity = document.getElementById('humidity')
 const textField = document.getElementById('textField')
 const searchBtn = document.getElementById('searchBtn')
@@ -33,4 +33,5 @@ function snowWeather(city){
     cityName.innerHTML=`${city.name} 
     <span>${city.sys.country}</span>`
     temp.innerHTML=`${(city.main.temp -273.15).toFixed()}°C`
+    winD.innerHTML=`Ветер: ${city.wind.speed} <span>km/h</span>`
 }
